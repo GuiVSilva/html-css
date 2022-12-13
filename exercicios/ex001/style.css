@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+body {
+  background-color:rgb(129, 30, 223);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-image: linear-gradient(to bottom, #3FCCD0, #3D8577);
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: justify;
+}
+
+h1 {
+  font-family:sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  color: brown;
+  background-color: darkgoldenrod;
+}
+
+h2 {
+  color: aquamarine;
+}
+
+p {
+  text-align: center;
+}
