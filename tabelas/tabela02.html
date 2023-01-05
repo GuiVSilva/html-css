@@ -14,6 +14,7 @@
     table{
       width: 500px;
       border-collapse: collapse;
+      position: relative;
     }
 
     td, th{
@@ -21,9 +22,26 @@
       padding: 10px
     }
 
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgray;
+    }
+
     thead, tfoot{
       background-color: gray;
       color: white;
+    }
+
+    thead > tr > th{
+      position: sticky;
+      top: -1px;
+      background-color: grey;
+    }
+
+    tbody > tr:nth-child(2n){
+      background-color: lightgray;
     }
 
     td.num{
@@ -36,19 +54,24 @@
   <!--
       ANATOMIA PARA TABELAS GRANDES
       TABLE
+        CAPTION
         THEAD
           TR, TD, TH
         TBODY
           TR, TD, TH
         TFOOT
           TR, TD, TH
+
+      th = titulo
+      td = dado
   -->
 
   <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
       <tr>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 50px;">População</th>
       </tr>
     </thead>
     <tbody>
@@ -76,15 +99,143 @@
       <tr>
         <td>Paraná</td>
         <td class="num">11.433.957</td>
-    </tr>
+      </tr>
+
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr>
+      <tr>
+        <td>Paraná</td>
+        <td class="num">11.433.957</td>
+      </tr> 
     </tbody>
     <tfoot>
       <tr>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="num"><strong>110.659.804</strong></td>
       </tr>
     </tfoot>
   </table>
-
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque fugit vel, perspiciatis dignissimos dolore exercitationem voluptatum labore animi hic? Voluptates, optio tenetur. Nam     
+    animi minima odio pariatur facere cupiditate repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, fugiat et tempora corrupti vero dolorem cum nihil quam 
+    dolorum incidunt accusamus ex debitis quae repudiandae labore placeat perferendis ipsa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nam id sint quam eligendi. 
+    Dolorum, sed reprehenderit! Reiciendis, alias! Exercitationem saepe, cum ipsam laboriosam doloribus maiores ullam eum commodi earum?
+  </p>
 </body>
 </html>
